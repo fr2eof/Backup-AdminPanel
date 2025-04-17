@@ -1,0 +1,4 @@
+[flake8]
+application-import-names = core
+exclude = .git, __pycache__, .venv
+import-order-style = google
