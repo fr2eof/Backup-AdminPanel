@@ -152,3 +152,7 @@ Pods/
 *.xcuserdata
 DerivedData/
 
+# Custom
+backup/
+core/migrations
+
