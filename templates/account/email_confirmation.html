@@ -1,0 +1,12 @@
+{% extends "account/base.html" %}
+
+{% block title %}Подтверждение email{% endblock %}
+
+{% block content %}
+    <h1>Подтверждение email</h1>
+    {% if success %}
+        <p class="success">Ваш email успешно подтвержден!</p>
+    {% else %}
+        <p class="error">Неверная ссылка для активации.</p>
+    {% endif %}
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "account/base.html" %}
+
+{% block title %}Подтверждение почты{% endblock %}
+
+{% block content %}
+    <h1>Подтверждение почты</h1>
+    <p>Привет <strong>{{ user.username }}</strong>,</p>
+    <p>Спасибо за регистрацию. Пожалуйста, подтверди свой почту нажатием на кнопку снизу:</p>
+    <p>
+        <a href="http://{{ domain }}/api/activate/{{ uid }}/{{ token }}/" class="button">
+            Подтвердить почту
+        </a>
+    </p>
+    <p>Если ты не регистрировался, проигнорируй это сообщение.</p>
+    <div class="footer">
+        <p>С уважением,<br>Команда поддержки</p>
+    </div>
+{% endblock %}
